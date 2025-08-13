@@ -9,7 +9,7 @@
             <div class="absolute inset-0 bg-[url('/images/batik-pattern.png')] bg-cover bg-center opacity-10"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up">
-                    Artikel Pendidikan
+                    Artikel
                 </h1>
                 <p class="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
                     Temukan artikel-artikel mendalam yang dirancang untuk memperdalam pemahaman Anda tentang Bahasa
@@ -20,35 +20,44 @@
 
         <!-- Articles Grid -->
         <section class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <a href="/articles/1/show" aria-label="Baca artikel Ilmu Pembelajaran"
-                        class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-                        <div class="h-48 bg-gradient-to-r from-green-600 to-yellow-400 flex items-center justify-center">
-                            <div class="text-white text-center">
-                                <svg class="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
-                                </svg>
-                                <p class="font-semibold">Pendidikan</p>
-                            </div>
+       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        @foreach ($articles as $article)
+            <a href="/articles/{{ $article->id }}/show"
+               aria-label="Baca artikel {{ $article->title }}"
+               class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+                <div class="h-48 relative">
+                    @if ($article->thumbnail_url)
+                        <img src="{{ $article->thumbnail_url }}"
+                             alt="{{ $article->title }} thumbnail"
+                             class="w-full h-full object-cover">
+                    @else
+                        <div class="h-full bg-gradient-to-r from-green-600 to-yellow-400 flex items-center justify-center">
+                            <svg class="w-12 h-12 mx-auto mb-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+                            </svg>
                         </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Ilmu Pembelajaran</h3>
-                            <p class="text-gray-600 text-base mb-4">
-                                Jelajahi wawasan mendalam dan pengetahuan praktis untuk memperkaya pemahaman Anda...
-                            </p>
-                            <div class="flex justify-between items-center">
-                                <span class="text-sm text-gray-500">5 menit baca</span>
-                                <span
-                                    class="text-green-600 font-medium hover:text-yellow-400 transition-colors duration-200">
-                                    Baca Selengkapnya →
-                                </span>
-                            </div>
-                        </div>
-                    </a>
+                    @endif
+                    <div class="absolute top-4 left-4 bg-green-600 text-white text-sm font-semibold px-3 py-1 rounded-full">
+                        {{ $article->articleCategory->name ?? 'Pendidikan' }}
+                    </div>
                 </div>
-            </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ $article->title }}</h3>
+                    <p class="text-gray-600 text-base mb-4">
+                        {{ Str::limit(strip_tags($article->content), 100, '...') }}
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">{{ $article->reading_time }} menit baca</span>
+                        <span class="text-green-600 font-medium hover:text-yellow-400 transition-colors duration-200">
+                            Baca Selengkapnya →
+                        </span>
+                    </div>
+                </div>
+            </a>
+        @endforeach
+    </div>
+</div>
         </section>
 
         <!-- Next Section -->

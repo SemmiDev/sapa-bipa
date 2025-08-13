@@ -1,9 +1,9 @@
 @extends('layouts.home')
 
-@section('title', 'SAPA BIPA')
+@section('title', 'SAPA BIPA - ' . $article->title)
 
 @section('content')
-     <div class="min-h-screen py-12 bg-gray-100">
+    <div class="min-h-screen py-12 bg-gray-100">
         <!-- Back Navigation -->
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
             <a href="/articles" aria-label="Kembali ke Halaman Artikel"
@@ -20,43 +20,33 @@
         <!-- Article Header -->
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="aspect-video bg-gradient-to-r from-green-600 to-yellow-400 relative">
-                    <div class="absolute inset-0 bg-[url('/images/batik-pattern.png')] bg-cover bg-center opacity-10"></div>
-                    <img src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=800"
-                         alt="Ilmu Pembelajaran" class="w-full h-full object-cover mix-blend-overlay">
+                <div class="aspect-video">
+                    @if ($article->thumbnail_url)
+                        <img src="{{ $article->thumbnail_url }}" alt="{{ $article->title }} thumbnail"
+                            class="w-full h-full object-cover">
+                    @else
+                        <div class="h-full bg-gradient-to-r from-green-600 to-yellow-400"></div>
+                    @endif
                 </div>
                 <div class="p-8">
                     <div class="flex flex-wrap items-center gap-4 mb-4">
-                        <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Pendidikan</span>
-                        <span class="text-gray-500 text-sm">5 menit baca</span>
-                        <span class="text-gray-500 text-sm">15 Januari 2025</span>
+                        <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            {{ $article->articleCategory->name ?? 'Pendidikan' }}
+                        </span>
+                        <span class="text-gray-500 text-sm">{{ $article->reading_time }} menit baca</span>
+                        <span class="text-gray-500 text-sm">{{ $article->created_at->format('d F Y') }}</span>
                     </div>
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">Ilmu Pembelajaran</h1>
-                    <p class="text-gray-600 mb-4">Oleh Dr. Sarah Johnson</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">{{ $article->title }}
+                    </h1>
+                    <p class="text-gray-600 mb-4">Oleh {{ $article->author ?? 'Penulis SAPA BIPA' }}</p>
                 </div>
             </div>
         </div>
 
         <!-- Article Content -->
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-            <div class="bg-white rounded-2xl shadow-lg p-8">
-                <p class="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
-                    Memahami cara kita belajar adalah kunci untuk meningkatkan hasil pendidikan. Penelitian neurosains terbaru telah mengungkap wawasan menarik tentang mekanisme pembelajaran dan pembentukan memori.
-                </p>
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Proses Pembelajaran Otak</h3>
-                <p class="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
-                    Saat kita mempelajari sesuatu yang baru, otak kita menciptakan jalur saraf baru. Proses ini, yang disebut neuroplastisitas, memungkinkan otak untuk berorganisasi ulang dan beradaptasi sepanjang hidup kita. Faktor-faktor utama yang meningkatkan pembelajaran meliputi:
-                </p>
-                <ul class="list-disc list-inside text-base md:text-lg text-gray-700 mb-6 space-y-2">
-                    <li>Keterlibatan aktif dengan materi</li>
-                    <li>Pengulangan terjadwal dari waktu ke waktu</li>
-                    <li>Menghubungkan informasi baru dengan pengetahuan yang sudah ada</li>
-                    <li>Tidur yang cukup untuk konsolidasi memori</li>
-                </ul>
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Aplikasi Praktis</h3>
-                <p class="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
-                    Wawasan ilmiah ini dapat diterapkan untuk menciptakan strategi pembelajaran yang lebih efektif. Platform pembelajaran interaktif, seperti permainan edukasi, memanfaatkan prinsip-prinsip ini untuk membuat pembelajaran lebih menarik dan mudah diingat.
-                </p>
+            <div class="bg-white rounded-2xl shadow-lg p-8 article-content">
+                {!! $article->content !!}
             </div>
         </div>
 

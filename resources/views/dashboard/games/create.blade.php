@@ -34,7 +34,7 @@
                     </div>
                     <div>
                         <label for="description" class="block text-sm font-medium text-gray-700">Deskripsi</label>
-                        <textarea name="description" id="description" rows="4"
+                        <textarea name="description" id="content" rows="4"
                                   class="mt-1 block w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500 @error('description') border-red-500 @enderror"
                                   placeholder="Masukkan deskripsi permainan (opsional)">{{ old('description') }}</textarea>
                         @error('description')
@@ -70,3 +70,13 @@
     </div>
 </div>
 @endsection
+
+
+@push('scripts')
+    <script>
+        ClassicEditor.create(document.querySelector('#content'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+@endpush

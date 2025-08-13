@@ -17,6 +17,116 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @yield('styles')
+
+    <style>
+        .article-content {
+            font-family: 'Inter', sans-serif;
+            color: #374151;
+            /* gray-700 */
+            line-height: 1.75;
+            font-size: 1.125rem;
+            /* text-lg */
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content i {
+            font-style: italic;
+        }
+
+        .article-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            /* gray-200 */
+        }
+
+        .article-content th,
+        .article-content td {
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            /* gray-200 */
+            text-align: left;
+        }
+
+        .article-content th {
+            background-color: #f3f4f6;
+            /* gray-100 */
+            font-weight: 600;
+            color: #1f2937;
+            /* gray-900 */
+        }
+
+        .article-content td i {
+            color: #4b5563;
+            /* gray-600 */
+        }
+    </style>
+
+    <style>
+        .game-content {
+            font-family: 'Inter', sans-serif;
+            color: #374151;
+            /* gray-700 */
+            line-height: 1.75;
+            font-size: 15px;
+            /* text-lg */
+        }
+
+        .game-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .game-content i {
+            font-style: italic;
+        }
+
+        .game-content ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+        }
+
+        .game-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .game-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            /* gray-200 */
+        }
+
+        .game-content th,
+        .game-content td {
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            /* gray-200 */
+            text-align: left;
+        }
+
+        .game-content th {
+            background-color: #f3f4f6;
+            /* gray-100 */
+            font-weight: 600;
+            color: #1f2937;
+            /* gray-900 */
+        }
+
+        .game-content td i {
+            color: #4b5563;
+            /* gray-600 */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -37,7 +147,8 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="/"
-                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Tentang Kami</a>
+                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Tentang
+                            Kami</a>
 
                         <!-- Articles Dropdown -->
                         <div class="relative dropdown">
@@ -61,7 +172,8 @@
                         </div>
 
                         <a href="/games" data-route="/games"
-                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Permainan</a>
+                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">🕹️
+                            Permainan</a>
                     </div>
                 </div>
 
@@ -86,7 +198,8 @@
         <div id="mobile-menu" class="md:hidden hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
                 <a href="/"
-                    class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Tentang Kami</a>
+                    class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Tentang
+                    Kami</a>
 
                 <div class="mobile-dropdown px-1">
                     <button

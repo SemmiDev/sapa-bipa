@@ -1,9 +1,9 @@
 @extends('layouts.home')
 
-@section('title', 'SAPA BIPA')
+@section('title', 'SAPA BIPA - ' . $category->name)
 
 @section('content')
-      <div class="min-h-screen py-12 bg-gray-100">
+    <div class="min-h-screen py-12 bg-gray-100">
         <!-- Back Navigation -->
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
             <a href="/vocabularies" aria-label="Kembali ke Halaman Kosa Kata"
@@ -20,20 +20,22 @@
         <!-- Category Header -->
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="aspect-video bg-gradient-to-r from-green-600 to-yellow-400 relative">
-                    <div class="absolute inset-0 bg-[url('/images/batik-pattern.png')] bg-cover bg-center opacity-10"></div>
-                    <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=800"
-                         alt="Kosa Kata Akademik" class="w-full h-full object-cover mix-blend-overlay">
+                <div class="aspect-video relative">
+                    @if ($category->thumbnail_url)
+                        <img src="{{ $category->thumbnail_url }}" alt="{{ $category->name }} thumbnail"
+                            class="w-full h-full object-cover">
+                    @else
+                        <div class="h-full bg-gradient-to-r from-green-600 to-yellow-400"></div>
+                    @endif
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <div class="text-6xl mb-4">🎓</div>
-                            <h1 class="text-3xl md:text-4xl font-bold animate-fade-in-up">Kosa Kata Akademik</h1>
+                        <div class="text-center text-white bg-black/40 p-3">
+                            <h1 class="text-3xl md:text-4xl font-bold animate-fade-in-up">{{ $category->name }}</h1>
                         </div>
                     </div>
                 </div>
                 <div class="p-8">
                     <p class="text-base md:text-lg text-gray-600 leading-relaxed">
-                        Kata-kata penting untuk kesuksesan akademik
+                        {{ $category->name }}
                     </p>
                 </div>
             </div>
@@ -42,12 +44,14 @@
         <!-- Vocabulary Words -->
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
-                    <div class="mb-4">
-                        <h3 class="text-2xl font-bold text-green-500">Menganalisis</h3>
-                        <p class="text-lg text-gray-600">Analyze</p>
+                @foreach ($category->vocabularies as $vocabulary)
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                        <div class="mb-4">
+                            <h3 class="text-2xl font-bold text-green-500">{{ $vocabulary->word }}</h3>
+                            <p class="text-lg text-gray-600">{{ $vocabulary->meaning }}</p>
+                        </div>
                     </div>
-                </div>
+                @endforeach
             </div>
         </div>
 
@@ -55,17 +59,13 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
             <div class="bg-gradient-to-r from-green-50 to-yellow-50 rounded-2xl p-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center animate-fade-in-up">💡 Tips Belajar</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-lg p-6">
-                        <h3 class="text-lg font-semibold text-green-600 mb-3">Tips Format Nama</h3>
-                        <p class="text-sm text-gray-600 mb-2">Saat membuat nama pengguna atau profil, gunakan format ini:</p>
-                        <code class="bg-gray-100 px-2 py-1 rounded text-sm">nama_negara_peran</code>
-                        <p class="text-xs text-gray-500 mt-2">Contoh: sarah_usa_siswa</p>
-                    </div>
-                    <div class="bg-white rounded-lg p-6">
-                        <h3 class="text-lg font-semibold text-green-600 mb-3">📝 Buat Kartu Flash</h3>
-                        <p class="text-sm text-gray-600">Tulis kosa kata baru di kartu flash dan ulas secara teratur untuk membantu mengingatnya lebih baik.</p>
-                    </div>
+                <div class="bg-white rounded-lg p-6">
+                    <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+                        <li>Ucapkan kata dengan suara keras 2–3 kali untuk mengingat bunyi dan arti.</li>
+                        <li>Kelompokkan kosakata berdasarkan tema (warna, keluarga, pekerjaan) saat menghafal.</li>
+                        <li>Latih pola kalimat sederhana: Subjek + Predikat + Objek/Keterangan. Contoh: Saya makan nasi.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -23,4 +23,12 @@ class Article extends Model
     {
         return $this->thumbnail ? Storage::url($this->thumbnail) : null;
     }
+
+    // Accessor untuk menghitung estimasi waktu baca dalam menit
+    public function getReadingTimeAttribute()
+    {
+        $wordCount = str_word_count(strip_tags($this->content));
+        $readingTime = ceil($wordCount / 200); // Asumsi 200 kata per menit
+        return max(1, $readingTime); // Minimal 1 menit
+    }
 }

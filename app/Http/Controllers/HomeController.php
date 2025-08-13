@@ -2,34 +2,63 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
+use App\Models\Game;
+use App\Models\VocabularyCategory;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function home() {
+    public function home()
+    {
         return view("home.home");
     }
 
-    public function articles() {
-        return view("home.articles");
+    public function articles()
+    {
+        $articles = Article::latest()->get();
+        return view("home.articles", [
+            'articles' => $articles,
+        ]);
     }
 
-    public function articleShow() {
-        return view("home.articles-show");
-    }
-    public function gameShow() {
-        return view("home.games-show");
-    }
-
-    public function vocabularies() {
-        return view("home.vocabularies");
+    public function articleShow($id)
+    {
+        $article = Article::find($id);
+        return view("home.articles-show", [
+            "article" => $article
+        ]);
     }
 
-    public function vocabularyShow() {
-        return view("home.vocabularies-show");
+    public function gameShow($id)
+    {
+       $game = Game::findOrFail($id);
+        return view("home.games-show", [
+            "game" => $game
+        ]);
     }
 
-    public function games() {
-        return view("home.games");
+    public function vocabularies()
+    {
+        $vocabularies = VocabularyCategory::with('vocabularies')->get();
+        return view("home.vocabularies", [
+            "vocabularies" => $vocabularies
+        ]);
+    }
+
+    public function vocabularyShow($id)
+    {
+        $category = VocabularyCategory::with('vocabularies')->findOrFail($id);
+        return view("home.vocabularies-show", [
+            "category" => $category
+        ]);
+    }
+
+    public function games()
+    {
+        $games = Game::latest()->get();
+        return view("home.games", [
+            "games" => $games
+        ]);
     }
 }

@@ -86,10 +86,10 @@
                                 class="next-button bg-gradient-to-r from-orange-500 to-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                                 Jelajahi Konten Kami →
                             </button>
-                            <button data-next="/for-instructors" aria-label="Integrasikan SAPA BIPA di Kelas Anda"
+                            {{-- <button data-next="/for-instructors" aria-label="Integrasikan SAPA BIPA di Kelas Anda"
                                 class="next-button bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                                 Integrasikan di Kelas Anda →
-                            </button>
+                            </button> --}}
                         </div>
                     </div>
                     <div class="bg-white rounded-2xl p-8 shadow-xl">
