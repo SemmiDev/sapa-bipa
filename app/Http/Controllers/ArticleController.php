@@ -11,7 +11,7 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        $articles = Article::with('articleCategory')->latest()->paginate(10);
+        $articles = Article::with('articleCategory')->latest()->paginate(100);
         return view('dashboard.articles.index', compact('articles'));
     }
 

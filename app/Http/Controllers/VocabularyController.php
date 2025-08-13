@@ -11,7 +11,7 @@ class VocabularyController extends Controller
 {
     public function index()
     {
-        $vocabularies = Vocabulary::with('vocabularyCategory')->latest()->paginate(10);
+        $vocabularies = Vocabulary::with('vocabularyCategory')->latest()->paginate(100);
         return view('dashboard.vocabularies.index', compact('vocabularies'));
     }
 

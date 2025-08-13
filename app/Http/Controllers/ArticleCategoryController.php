@@ -10,7 +10,7 @@ class ArticleCategoryController extends Controller
 {
     public function index()
     {
-        $categories = ArticleCategory::latest()->paginate(10);
+        $categories = ArticleCategory::latest()->paginate(100);
         return view('dashboard.article-categories.index', compact('categories'));
     }
 

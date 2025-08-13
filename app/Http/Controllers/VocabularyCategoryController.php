@@ -10,7 +10,7 @@ class VocabularyCategoryController extends Controller
 {
     public function index()
     {
-        $categories = VocabularyCategory::latest()->paginate(10);
+        $categories = VocabularyCategory::latest()->paginate(100);
         return view('dashboard.vocabularies-categories.index', compact('categories'));
     }
 

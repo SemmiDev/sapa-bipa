@@ -30,7 +30,7 @@
                         @enderror
                     </div>
                     <div>
-                        <label for="word" class="block text-sm font-medium text-gray-700">Kata</label>
+                        <label for="word" class="block text-sm font-medium text-gray-700">Kata Dalam Bahasa Indonesia</label>
                         <input type="text" name="word" id="word" value="{{ old('word') }}"
                                class="mt-1 block w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:ring-[#007A55] focus:border-[#007A55] @error('word') border-red-500 @enderror"
                                placeholder="Masukkan kata">
@@ -39,7 +39,7 @@
                         @enderror
                     </div>
                     <div>
-                        <label for="meaning" class="block text-sm font-medium text-gray-700">Arti</label>
+                        <label for="meaning" class="block text-sm font-medium text-gray-700">Kata Dalam Bahasa Inggris</label>
                         <input type="text" name="meaning" id="meaning" value="{{ old('meaning') }}"
                                class="mt-1 block w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:ring-[#007A55] focus:border-[#007A55] @error('meaning') border-red-500 @enderror"
                                placeholder="Masukkan arti kata">

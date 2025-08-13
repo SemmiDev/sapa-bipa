@@ -72,3 +72,12 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+    <script>
+        ClassicEditor.create(document.querySelector('#content'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+@endpush

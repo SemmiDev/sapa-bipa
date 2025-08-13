@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -28,6 +30,91 @@
     <style>
         * {
             font-family: 'Nunito', sans-serif;
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .ProseMirror {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            min-height: 150px;
+            background: white;
+            outline: none;
+        }
+
+        .ProseMirror:focus {
+            border-color: #007A55;
+            box-shadow: 0 0 0 3px rgba(0, 122, 85, 0.2);
+        }
+
+        .ProseMirror p.is-editor-empty:first-child::before {
+            content: attr(data-placeholder);
+            color: #9ca3af;
+            float: left;
+            height: 0;
+            pointer-events: none;
+        }
+
+        .tiptap-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            background: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem 0.5rem 0 0;
+            margin-bottom: -1px;
+        }
+
+        .tiptap-toolbar button {
+            background: #ffffff;
+            border: 1px solid #d1d5db;
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            color: #374151;
+        }
+
+        .tiptap-toolbar button:hover {
+            background: #e5e7eb;
+        }
+
+        .tiptap-toolbar button.active {
+            background: #007A55;
+            color: white;
+        }
+
+        .ProseMirror table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .ProseMirror th,
+        .ProseMirror td {
+            border: 1px solid #d1d5db;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        .ProseMirror th {
+            background: #f3f4f6;
+            font-weight: 600;
         }
     </style>
 </head>
