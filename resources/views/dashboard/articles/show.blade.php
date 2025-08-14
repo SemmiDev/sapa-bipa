@@ -22,7 +22,7 @@
                 </div>
                 <div>
                     <h3 class="text-sm font-medium text-gray-700">Konten</h3>
-                    <p class="mt-1 text-gray-900">{!! nl2br(e($article->content)) !!}</p>
+                    <p class="mt-1 text-gray-900">{!! $article->content !!}</p>
                 </div>
                 <div>
                     <h3 class="text-sm font-medium text-gray-700">Thumbnail</h3>

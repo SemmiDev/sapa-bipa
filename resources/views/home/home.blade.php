@@ -3,7 +3,7 @@
 @section('title', 'SAPA BIPA')
 
 @section('content')
-     <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen bg-gray-100">
         <!-- Hero Section -->
         <section class="relative overflow-hidden bg-gradient-to-r from-orange-500 via-orange-400 to-green-500 py-20">
             <div class="absolute inset-0 bg-black opacity-10"></div>
@@ -13,12 +13,13 @@
                         Selamat Datang di <span class="text-yellow-200">SAPA BIPA</span>
                     </h1>
                     <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-                        Belajar Bahasa Indonesia dan budaya lokal secara menyenangkan, interaktif, dan kontekstual melalui permainan digital inovatif.
+                        Belajar Bahasa Indonesia dan budaya lokal secara menyenangkan, interaktif, dan kontekstual melalui
+                        permainan digital inovatif.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="#perkenalan" aria-label="Mulai Belajar SAPA BIPA"
-                            class="next-button bg-white text-orange-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                            Mulai Belajar →
+                           class="next-button bg-white text-orange-500 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                            Selengkapnya →
                         </a>
                     </div>
                 </div>
@@ -26,12 +27,15 @@
         </section>
 
         <!-- About Us Section -->
-        <section class="py-20 bg-white">
+        <section id="perkenalan" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div id="perkenalan" class="text-center mb-16">
+                <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tentang SAPA BIPA</h2>
                     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        SAPA BIPA (Sahabat Pembelajar Bahasa Indonesia untuk Penutur Asing) adalah platform pembelajaran interaktif yang menggabungkan bahasa dan budaya Indonesia melalui pendekatan Digital Game-Based Learning (DGBL). Kami menghadirkan pengalaman belajar yang menyenangkan, kontekstual, dan efektif untuk penutur asing, lembaga pengelola BIPA, dan pengajar.
+                        SAPA BIPA (Sahabat Pembelajar Bahasa Indonesia untuk Penutur Asing) adalah platform pembelajaran
+                        interaktif yang menggabungkan bahasa dan budaya Indonesia melalui pendekatan Digital Game-Based
+                        Learning (DGBL). Kami menghadirkan pengalaman belajar yang menyenangkan, kontekstual, dan efektif
+                        untuk penutur asing, lembaga pengelola BIPA, dan pengajar.
                     </p>
                 </div>
 
@@ -43,7 +47,9 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Konten Multisensori</h3>
-                        <p class="text-gray-600 leading-relaxed">Materi pembelajaran menggabungkan audio, visual, dan interaksi langsung untuk pengalaman belajar yang kaya dan mendalam, diadaptasi dari BIPA Daring Kementerian Pendidikan.</p>
+                        <p class="text-gray-600 leading-relaxed">Materi pembelajaran menggabungkan audio, visual, dan
+                            interaksi langsung untuk pengalaman belajar yang kaya dan mendalam, diadaptasi dari BIPA Daring
+                            Kementerian Pendidikan.</p>
                     </div>
 
                     <div class="text-center group">
@@ -53,7 +59,8 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Pembelajaran Interaktif</h3>
-                        <p class="text-gray-600 leading-relaxed">Permainan digital dengan tantangan menarik untuk meningkatkan keterlibatan dan retensi pengetahuan.</p>
+                        <p class="text-gray-600 leading-relaxed">Permainan digital dengan tantangan menarik untuk
+                            meningkatkan keterlibatan dan retensi pengetahuan.</p>
                     </div>
 
                     <div class="text-center group">
@@ -63,7 +70,8 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 mb-3">Platform Adaptif</h3>
-                        <p class="text-gray-600 leading-relaxed">Desain responsif yang mendukung pembelajaran di berbagai perangkat dan lingkungan belajar.</p>
+                        <p class="text-gray-600 leading-relaxed">Desain responsif yang mendukung pembelajaran di berbagai
+                            perangkat dan lingkungan belajar.</p>
                     </div>
                 </div>
             </div>
@@ -76,20 +84,19 @@
                     <div>
                         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Misi Kami</h2>
                         <p class="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
-                            SAPA BIPA bertujuan menginternasionalisasikan Bahasa Indonesia melalui pengalaman belajar yang inovatif, inklusif, dan menyenangkan, sekaligus memperkenalkan kekayaan budaya nusantara.
+                            SAPA BIPA bertujuan menginternasionalisasikan Bahasa Indonesia melalui pengalaman belajar yang
+                            inovatif, inklusif, dan menyenangkan, sekaligus memperkenalkan kekayaan budaya nusantara.
                         </p>
                         <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-                            Dengan pendekatan Digital Game-Based Learning, kami menggabungkan teknologi dan metode pedagogis untuk menciptakan pembelajaran yang interaktif, kontekstual, dan efektif bagi penutur asing, pengajar, dan lembaga BIPA.
+                            Dengan pendekatan Digital Game-Based Learning, kami menggabungkan teknologi dan metode pedagogis
+                            untuk menciptakan pembelajaran yang interaktif, kontekstual, dan efektif bagi penutur asing,
+                            pengajar, dan lembaga BIPA.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <button data-next="/explore-content" aria-label="Jelajahi Konten SAPA BIPA"
-                                class="next-button bg-gradient-to-r from-orange-500 to-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                Jelajahi Konten Kami →
-                            </button>
-                            {{-- <button data-next="/for-instructors" aria-label="Integrasikan SAPA BIPA di Kelas Anda"
-                                class="next-button bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                Integrasikan di Kelas Anda →
-                            </button> --}}
+                            <a href="#perjalanan" aria-label="Perjalanan Belajar SAPA BIPA"
+                               class="next-button bg-gradient-to-r from-orange-500 to-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                Perjalanan Belajar →
+                            </a>
                         </div>
                     </div>
                     <div class="bg-white rounded-2xl p-8 shadow-xl">
@@ -117,31 +124,41 @@
         </section>
 
         <!-- Learning Journey Section -->
-        <section class="py-20 bg-white">
+        <section id="perjalanan" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Perjalanan Belajar SAPA BIPA</h2>
                     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Mulai dari pre-test sederhana hingga permainan interaktif, SAPA BIPA dirancang untuk membuat pembelajaran Bahasa Indonesia dan budaya lokal menjadi pengalaman yang menyenangkan dan bermakna. Materi kami diadaptasi dari BIPA Daring Kementerian Pendidikan Dasar dan Menengah.
+                        Mulai dari pre-test sederhana hingga permainan interaktif, SAPA BIPA dirancang untuk membuat
+                        pembelajaran Bahasa Indonesia dan budaya lokal menjadi pengalaman yang menyenangkan dan bermakna.
+                        Materi kami diadaptasi dari BIPA Daring Kementerian Pendidikan Dasar dan Menengah.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-gradient-to-r from-pink-500 to-yellow-500 text-white rounded-2xl p-8 shadow-lg">
                         <h3 class="text-2xl font-semibold mb-4">Pre-Test</h3>
                         <p class="text-gray-100 leading-relaxed mb-4">
-                            Mulai perjalanan Anda dengan pre-test sederhana untuk mengetahui kemampuan awal Anda dalam Bahasa Indonesia.
+                            Mulai perjalanan Anda dengan pre-test sederhana untuk mengetahui kemampuan awal Anda dalam
+                            Bahasa Indonesia.
                         </p>
                         <p class="text-gray-100 leading-relaxed">
-                            Tes ini membantu menyesuaikan materi pembelajaran dengan kebutuhan Anda, membuat pengalaman belajar lebih personal.
+                            Tes ini membantu menyesuaikan materi pembelajaran dengan kebutuhan Anda, membuat pengalaman
+                            belajar lebih personal.
                         </p>
+                        <a href="#pretest" aria-label="Mulai Pre-Tes SAPA BIPA"
+                           class="inline-block mt-6 bg-white text-orange-500 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                            Mulai Pre-Test
+                        </a>
                     </div>
                     <div class="bg-gradient-to-r from-orange-500 to-green-500 text-white rounded-2xl p-8 shadow-lg">
                         <h3 class="text-2xl font-semibold mb-4">Level 1 - Pemula</h3>
                         <p class="text-gray-100 leading-relaxed mb-4">
-                            Untuk peserta yang baru mulai belajar Bahasa Indonesia. Materi mencakup kosa kata dasar, salam, angka, warna, pekerjaan, dan ungkapan sehari-hari.
+                            Untuk peserta yang baru mulai belajar Bahasa Indonesia. Materi mencakup kosa kata dasar, salam,
+                            angka, warna, pekerjaan, dan ungkapan sehari-hari.
                         </p>
                         <p class="text-gray-100 leading-relaxed">
-                            Berisi 15 soal interaktif dengan desain visual menarik dan tantangan berbasis waktu untuk meningkatkan motivasi belajar.
+                            Berisi 15 soal interaktif dengan desain visual menarik dan tantangan berbasis waktu untuk
+                            meningkatkan motivasi belajar.
                         </p>
                     </div>
                     <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-2xl p-8 shadow-lg">
@@ -150,9 +167,75 @@
                             Untuk peserta dengan kemampuan dasar yang ingin memperdalam bahasa dan budaya Indonesia.
                         </p>
                         <p class="text-gray-100 leading-relaxed">
-                            Tantangan lebih kompleks dengan 15 soal interaktif yang mengasah keterampilan berbahasa dan pemahaman budaya.
+                            Tantangan lebih kompleks dengan 15 soal interaktif yang mengasah keterampilan berbahasa dan
+                            pemahaman budaya.
                         </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pretest Game Card Section -->
+        <section id="pretest" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mulai dengan Pre-Test</h2>
+                    <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        Uji kemampuan awal Anda dengan pre-test interaktif kami untuk menyesuaikan perjalanan belajar Anda.
+                    </p>
+                </div>
+                @php
+                   $pretestGame = App\Models\Game::where('title', 'LIKE', '%' . 'pre' . '%')->first();
+                @endphp
+                @if ($pretestGame)
+                    <a href="/games/{{ $pretestGame->id }}/show"
+                       aria-label="Mainkan {{ $pretestGame->title }}"
+                       class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer max-w-4xl mx-auto">
+                        <div class="h-48">
+                            @if ($pretestGame->thumbnail_url)
+                                <img src="{{ $pretestGame->thumbnail_url }}"
+                                     alt="{{ $pretestGame->title }} thumbnail"
+                                     class="w-full h-full object-cover">
+                            @else
+                                <div class="h-full bg-gradient-to-r from-pink-500 to-yellow-500 flex items-center justify-center">
+                                    <p class="text-white font-semibold">{{ $pretestGame->title }}</p>
+                                </div>
+                            @endif
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-3">{{ $pretestGame->title }}</h3>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-sm bg-gray-100 text-gray-600 px-3 py-1 rounded">{{ $pretestGame->level }}</span>
+                            </div>
+                            <button class="w-full bg-gradient-to-r from-pink-500 to-yellow-500 text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300">
+                                Mainkan Sekarang
+                            </button>
+                        </div>
+                    </a>
+                @else
+                    <div class="bg-white rounded-xl shadow-lg p-8 text-center max-w-4xl mx-auto">
+                        <p class="text-lg text-gray-600">Pre-Test belum tersedia. Silakan cek kembali nanti!</p>
+                    </div>
+                @endif
+            </div>
+        </section>
+
+        <!-- Navigation Section -->
+        <section class="py-20 bg-gradient-to-r from-green-50 to-orange-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Jelajahi Lebih Banyak</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                    Lanjutkan perjalanan belajar Anda dengan artikel budaya dan kosa kata Bahasa Indonesia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/articles" aria-label="Lihat Artikel SAPA BIPA"
+                       class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        Lihat Artikel
+                    </a>
+                    <a href="/vocabularies" aria-label="Lihat Kosa Kata SAPA BIPA"
+                       class="bg-gradient-to-r from-orange-500 to-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        Lihat Kosa Kata
+                    </a>
                 </div>
             </div>
         </section>

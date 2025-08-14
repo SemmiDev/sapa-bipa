@@ -19,111 +19,143 @@
     @yield('styles')
 
     <style>
-        .article-content {
-            font-family: 'Inter', sans-serif;
-            color: #374151;
-            /* gray-700 */
-            line-height: 1.75;
-            font-size: 1.125rem;
-            /* text-lg */
+        .prose {
+            line-height: 1.5;
+            font-size: 1.1rem;
         }
-
-        .article-content p {
-            margin-bottom: 1.5rem;
+        .prose p {
+            /* margin-bottom: 1.5rem; */
         }
-
-        .article-content i {
+        .prose i, .prose em {
             font-style: italic;
         }
-
-        .article-content table {
+        .prose b, .prose strong {
+            font-weight: 700;
+        }
+        .prose ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            /* margin-bottom: 1.5rem; */
+            padding-left: 1rem;
+        }
+        .prose ol {
+            list-style-type: decimal;
+            list-style-position: inside;
+            /* margin-bottom: 1.5rem; */
+            padding-left: 1rem;
+        }
+        .prose li {
+            /* margin-bottom: 0.5rem; */
+        }
+        .prose table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 1.5rem;
+            /* margin-bottom: 1.5rem; */
             background-color: #ffffff;
-            border: 1px solid #e5e7eb;
-            /* gray-200 */
+            border: 1px solid #e5e7eb; /* gray-200 */
         }
-
-        .article-content th,
-        .article-content td {
+        .prose th,
+        .prose td {
             padding: 0.75rem;
-            border: 1px solid #e5e7eb;
-            /* gray-200 */
+            border: 1px solid #e5e7eb; /* gray-200 */
             text-align: left;
         }
-
-        .article-content th {
-            background-color: #f3f4f6;
-            /* gray-100 */
+        .prose th {
+            background-color: #f3f4f6; /* gray-100 */
             font-weight: 600;
-            color: #1f2937;
-            /* gray-900 */
+            color: #1f2937; /* gray-900 */
         }
-
-        .article-content td i {
-            color: #4b5563;
-            /* gray-600 */
+        .prose td i, .prose td em {
+            color: #4b5563; /* gray-600 */
+        }
+        /* Quill-specific font size classes */
+        .prose .ql-size-small {
+            font-size: 0.75rem; /* smaller text */
+        }
+        .prose .ql-size-large {
+            font-size: 1.25rem; /* larger text */
+        }
+        .prose .ql-size-huge {
+            font-size: 1.5rem; /* even larger text */
+        }
+        /* Quill header classes */
+        .prose .ql-size-h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            /* margin-bottom: 1rem; */
+        }
+        .prose .ql-size-h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            /* margin-bottom: 0.75rem; */
+        }
+        .prose .ql-size-h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            /* margin-bottom: 0.5rem; */
+        }
+        /* Quill alignment classes */
+        .prose .ql-align-center {
+            text-align: center;
+        }
+        .prose .ql-align-right {
+            text-align: right;
+        }
+        .prose .ql-align-justify {
+            text-align: justify;
+        }
+        /* Quill list indentation */
+        .prose .ql-indent-1 {
+            padding-left: 2rem;
+        }
+        .prose .ql-indent-2 {
+            padding-left: 4rem;
+        }
+        .prose .ql-indent-3 {
+            padding-left: 6rem;
         }
     </style>
 
+
     <style>
         .game-content {
-            font-family: 'Inter', sans-serif;
             color: #374151;
-            /* gray-700 */
-            line-height: 1.75;
-            font-size: 15px;
-            /* text-lg */
+            line-height: 0.6cm;
+            font-size: 13px;
         }
 
-        .game-content p {
-            margin-bottom: 1.5rem;
-        }
-
-        .game-content i {
-            font-style: italic;
-        }
+        .game-content p {}
 
         .game-content ul {
             list-style-type: disc;
             list-style-position: inside;
-            margin-bottom: 1.5rem;
             padding-left: 1rem;
         }
 
-        .game-content li {
-            margin-bottom: 0.5rem;
-        }
+        .game-content li {}
 
         .game-content table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 1.5rem;
             background-color: #ffffff;
             border: 1px solid #e5e7eb;
-            /* gray-200 */
         }
 
         .game-content th,
         .game-content td {
             padding: 0.75rem;
             border: 1px solid #e5e7eb;
-            /* gray-200 */
             text-align: left;
         }
 
         .game-content th {
             background-color: #f3f4f6;
-            /* gray-100 */
             font-weight: 600;
-            color: #1f2937;
             /* gray-900 */
         }
 
         .game-content td i {
             color: #4b5563;
-            /* gray-600 */
         }
     </style>
 
@@ -137,10 +169,10 @@
                 <!-- Logo -->
                 <a href="/" class="flex-shrink-0 flex items-center">
                     <div
-                        class="w-11 h-11 bg-gradient-to-r from-primary-orange to-primary-green rounded-full flex items-center justify-center mr-3">
+                        class="w-10 h-10 bg-gradient-to-r from-primary-orange to-primary-green rounded-full flex items-center justify-center mr-3">
                         <img src="{{ asset('logo.png') }}" alt="SAPA BIPA Logo">
                     </div>
-                    <span class="text-2xl font-bold text-gray-800">SAPA BIPA</span>
+                    <span class="text-xl font-bold text-gray-800">SAPA BIPA</span>
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -267,11 +299,11 @@
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Kontak</h3>
-                    <p class="text-gray-300 text-sm">Email: hello@sapabipa.com</p>
-                    <p class="text-gray-300 text-sm">Phone: +62 (21) 123-4567</p>
+                    <p class="text-gray-300 text-sm">Pos-el: ikadubasriau@gmail.com</p>
+                    <p class="text-gray-300 text-sm">Kontak: 082286480011</p>
+                    <p class="text-gray-300 text-sm">Instagram : @dutabahasariau</p>
                     <p class="text-gray-300 text-sm mt-2">Ikuti Kami:</p>
-                    <div class="flex space-x-4 mt-2">
-                        <!-- Instagram -->
+                    <a class="flex space-x-4 mt-2" href="https://www.instagram.com/dutabahasariau">
                         <span class="[&>svg]:h-5 [&>svg]:w-5">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
@@ -279,24 +311,7 @@
                                     d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                             </svg>
                         </span>
-                        <!-- Youtube -->
-                        <span class="[&>svg]:h-5 [&>svg]:w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
-                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                <path
-                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
-                            </svg>
-                        </span>
-
-                        <!-- TikTok -->
-                        <span class="[&>svg]:h-5 [&>svg]:w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
-                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                <path
-                                    d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
-                            </svg>
-                        </span>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center">
@@ -304,6 +319,17 @@
             </div>
         </div>
     </footer>
+    <!-- JavaScript for Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
     @stack('scripts')
 </body>
 

@@ -45,8 +45,11 @@
 
         <!-- Article Content -->
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-            <div class="bg-white rounded-2xl shadow-lg p-8 article-content">
-                {!! $article->content !!}
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="prose">
+                    {!! $article->content !!}
+
+                </div>
             </div>
         </div>
 

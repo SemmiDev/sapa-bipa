@@ -29,6 +29,7 @@ class GameController extends Controller
             'thumbnail' => 'required|image|mimes:jpg,png,jpeg|max:2048',
         ]);
 
+
         if ($request->hasFile('thumbnail')) {
             $validated['thumbnail'] = $request->file('thumbnail')->store('thumbnails', 'public');
         }

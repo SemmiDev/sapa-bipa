@@ -13,8 +13,7 @@
                 </h1>
                 <p class="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed mb-8">
                     Laman ini membantu penutur asing pemula menyiapkan bekal kosakata dan pola kalimat sederhana sebelum
-                    memainkan permainan digital SAPA BIPA. Ikuti alur belajar:
-                    <span class="font-semibold">Pre-test sederhana → Bacaan budaya lokal → Permainan Level 1 & 2</span>.
+                    memainkan permainan digital SAPA BIPA.
                 </p>
                 <p class="text-base md:text-lg text-yellow-100 italic max-w-3xl mx-auto leading-relaxed mb-8">
                     Catatan: Kosakata disajikan dalam Bahasa Indonesia dengan terjemahan Inggris di bawahnya untuk

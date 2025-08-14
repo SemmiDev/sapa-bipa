@@ -32,7 +32,7 @@ class HomeController extends Controller
 
     public function gameShow($id)
     {
-       $game = Game::findOrFail($id);
+        $game = Game::findOrFail($id);
         return view("home.games-show", [
             "game" => $game
         ]);
@@ -56,7 +56,10 @@ class HomeController extends Controller
 
     public function games()
     {
-        $games = Game::latest()->get();
+        $games = Game::where('title', 'NOT LIKE', '%pre%')
+            ->orderBy('level', 'asc')
+            ->get();
+
         return view("home.games", [
             "games" => $games
         ]);

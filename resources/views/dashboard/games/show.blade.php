@@ -26,7 +26,7 @@
                 </div>
                 <div>
                     <h3 class="text-sm font-medium text-gray-700">Deskripsi</h3>
-                    <p class="mt-1 text-gray-900">{{ $game->description ?? 'Tidak ada deskripsi' }}</p>
+                    <p class="mt-1 text-gray-900">{!! $game->description !!}</p>
                 </div>
                 <div>
                     <h3 class="text-sm font-medium text-gray-700">Thumbnail</h3>

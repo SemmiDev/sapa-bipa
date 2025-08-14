@@ -13,7 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+    {{-- Quill core & theme --}}
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    {{-- Quill Better Table plugin --}}
+    <link href="https://cdn.jsdelivr.net/npm/quill-better-table@1.2.10/dist/quill-better-table.min.css" rel="stylesheet">
+
+
+    {{-- <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-dev.4/dist/quill.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.0-dev.4/dist/quill.snow.css" rel="stylesheet"> --}}
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])

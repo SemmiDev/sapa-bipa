@@ -11,7 +11,7 @@
         </div>
 
         <div class="p-6">
-            <form action="{{ route('dashboard.articles.update', $article) }}" method="POST" enctype="multipart/form-data">
+            <form id="articleForm" action="{{ route('dashboard.articles.update', $article) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="space-y-6">
@@ -41,9 +41,8 @@
                     </div>
                     <div>
                         <label for="content" class="block text-sm font-medium text-gray-700">Konten</label>
-                        <textarea name="content" id="content" rows="6"
-                                  class="mt-1 block w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:ring-[#007A55] focus:border-[#007A55] @error('content') border-red-500 @enderror"
-                                  placeholder="Masukkan konten artikel">{{ old('content', $article->content) }}</textarea>
+                         <div id="quillEditor" class="min-h-[200px]"></div>
+                        <textarea name="content" id="editor" hidden>{{ old('content', $article->content) }}</textarea>
                         @error('content')
                             <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                         @enderror
@@ -73,11 +72,57 @@
 </div>
 @endsection
 
+
+@push('styles')
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/quill-better-table@1.2.10/dist/quill-better-table.min.css" rel="stylesheet">
+@endpush
+
 @push('scripts')
-    <script>
-        ClassicEditor.create(document.querySelector('#content'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quill-better-table@1.2.10/dist/quill-better-table.min.js"></script>
+
+   <script>
+    // Inisialisasi Quill
+    var quill = new Quill('#quillEditor', {
+        theme: 'snow',
+        modules: {
+            toolbar: [
+                [{ 'header': [1, 2, 3, false] }],
+                [{ 'size': ['small', false, 'large', 'huge'] }],
+                ['bold', 'italic', 'underline', 'strike'],
+                [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+                [{ 'align': [] }],
+                ['blockquote', 'code-block'],
+                ['link'],
+                ['clean']
+            ],
+            keyboard: {
+                bindings: quillBetterTable.keyboardBindings
+            }
+        },
+        placeholder: 'Masukkan konten...',
+    });
+
+    // Ambil konten lama dari textarea
+    let editor = document.querySelector('#editor');
+    let oldContent = editor.value;
+
+    // Jika ada konten lama, set ke Quill
+    if (oldContent.trim() !== '') {
+        quill.root.innerHTML = oldContent;
+    }
+
+    // Sinkronkan konten Quill ke textarea setiap kali ada perubahan
+    quill.on('text-change', function() {
+        editor.value = quill.root.innerHTML;
+    });
+
+    // Pastikan konten tersinkronisasi saat form akan disubmit
+    document.getElementById('articleForm').addEventListener('submit', function(e) {
+        // Update textarea dengan konten terbaru dari Quill
+        editor.value = quill.root.innerHTML;
+    });
+</script>
+
 @endpush
