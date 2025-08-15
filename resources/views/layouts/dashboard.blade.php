@@ -347,6 +347,19 @@
                             </a>
                         </li>
 
+                            <!-- Kelola Permainan -->
+                        <li>
+                            <a href="/dashboard/proof"
+                                class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100 group {{ request()->routeIs('dashboard.proof.*') ? 'text-[#03543F] border-r-4 border-[#03543F]' : '' }}">
+                                <svg class="w-4 h-4 mr-3 {{ request()->routeIs('dashboard.proof.*') ? 'text-[#03543F]' : 'text-gray-400 group-hover:text-gray-500' }}"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2z"></path>
+                                </svg>
+                                Foto Bukti
+                            </a>
+                        </li>
+
                         <!-- Profil -->
                         <li>
                             <a href="/profil"

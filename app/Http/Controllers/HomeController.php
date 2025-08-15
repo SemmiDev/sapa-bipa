@@ -64,4 +64,12 @@ class HomeController extends Controller
             "games" => $games
         ]);
     }
+
+     public function submitProof(Request $request)
+    {
+        if ($request->hasFile('proof-image')) {
+            $request->file('proof-image')->store('proof-images', 'public');
+        }
+        return redirect()->back()->with('success', 'Foto berhasil di kirim.');
+    }
 }

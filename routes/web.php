@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProofController;
 use App\Http\Controllers\VocabularyCategoryController;
 use App\Http\Controllers\VocabularyController;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,9 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/profil', [ProfileController::class, 'show'])->name('profile.show');
 Route::post('/profil', [ProfileController::class, 'update'])->name('profile.update');
+
+Route::post('/submit-proof', [HomeController::class, 'submitProof'])->name('submit-proof');
+
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {
     // Dashboard Index
@@ -77,4 +81,6 @@ Route::prefix('dashboard')->middleware('auth')->group(function () {
     Route::get('/games/{game}/edit', [GameController::class, 'edit'])->name('dashboard.games.edit');
     Route::put('/games/{game}', [GameController::class, 'update'])->name('dashboard.games.update');
     Route::delete('/games/{game}', [GameController::class, 'destroy'])->name('dashboard.games.destroy');
+
+    Route::get('/proof', [ProofController::class, 'index'])->name('dashboard.proof.index');
 });
