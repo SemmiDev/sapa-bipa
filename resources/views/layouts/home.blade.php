@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/build/assets/app-D4aioymF.css">
 	<script src="/build/assets/app-Bg19yiM2.js" defer></script>
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
     @yield('styles')
 

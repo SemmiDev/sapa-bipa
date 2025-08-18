@@ -18,19 +18,8 @@
     {{-- Quill Better Table plugin --}}
     <link href="https://cdn.jsdelivr.net/npm/quill-better-table@1.2.10/dist/quill-better-table.min.css" rel="stylesheet">
 
-
-    {{-- <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-dev.4/dist/quill.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.0-dev.4/dist/quill.snow.css" rel="stylesheet"> --}}
-
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-
     <link rel="stylesheet" href="/build/assets/app-D4aioymF.css">
 	<script src="/build/assets/app-Bg19yiM2.js" defer></script>
-
-    {{-- <link rel="stylesheet" href="/build/assets/app-CmtpiSwD.css">
-    <script src="/build/assets/app-X2UW5owF.js" defer></script> --}}
 
     <!-- Flowbite -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
