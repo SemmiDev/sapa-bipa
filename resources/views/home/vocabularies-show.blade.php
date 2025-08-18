@@ -7,7 +7,7 @@
         <!-- Back Navigation -->
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
             <a href="/vocabularies" aria-label="Kembali ke Halaman Kosa Kata"
-                class="flex items-center text-green-600 hover:text-yellow-400 transition-colors duration-200">
+                class="flex items-center text-primary-blue hover:text-primary-orange transition-colors duration-200">
                 <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                         d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
@@ -25,7 +25,7 @@
                         <img src="{{ $category->thumbnail_url }}" alt="{{ $category->name }} thumbnail"
                             class="w-full h-full object-cover">
                     @else
-                        <div class="h-full bg-gradient-to-r from-green-600 to-yellow-400"></div>
+                        <div class="h-full bg-gradient-to-r from-primary-blue to-primary-orange"></div>
                     @endif
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="text-center text-white bg-black/40 p-3">
@@ -47,7 +47,7 @@
                 @foreach ($category->vocabularies as $vocabulary)
                     <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
                         <div class="mb-4">
-                            <h3 class="text-2xl font-bold text-green-500">{{ $vocabulary->word }}</h3>
+                            <h3 class="text-2xl font-bold text-primary-blue">{{ $vocabulary->word }}</h3>
                             <p class="text-lg text-gray-600">{{ $vocabulary->meaning }}</p>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
 
         <!-- Tips Section -->
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-            <div class="bg-gradient-to-r from-green-50 to-yellow-50 rounded-2xl p-8">
+            <div class="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center animate-fade-in-up">💡 Tips Belajar</h2>
                 <div class="bg-white rounded-lg p-6">
                     <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
@@ -71,14 +71,14 @@
         </div>
 
         <!-- Next Section -->
-        <section class="py-16 bg-gradient-to-r from-green-50 to-yellow-50">
+        <section class="py-16 bg-gradient-to-r from-primary-50 to-secondary-50">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-bold text-gray-900 mb-6 animate-fade-in-up">Latih Kosa Kata Anda</h2>
                 <p class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
                     Uji pengetahuan Anda dengan permainan interaktif yang dirancang untuk memperkuat kosa kata ini.
                 </p>
                 <a href="/games" aria-label="Mainkan Permainan Kosa Kata SAPA BIPA"
-                    class="next-button bg-gradient-to-r from-green-600 to-yellow-400 text-white px-10 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                    class="next-button bg-gradient-to-r from-primary-blue to-primary-orange text-white px-10 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                     Mainkan Permainan Kosa Kata →
                 </a>
             </div>

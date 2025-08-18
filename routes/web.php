@@ -4,6 +4,7 @@ use App\Http\Controllers\ArticleCategoryController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -32,6 +33,10 @@ Route::post('/profil', [ProfileController::class, 'update'])->name('profile.upda
 
 Route::post('/submit-proof', [HomeController::class, 'submitProof'])->name('submit-proof');
 
+// Feedback routes
+Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
+Route::get('/feedback/create', [FeedbackController::class, 'create'])->name('feedback.create');
+Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
 
 Route::prefix('dashboard')->middleware('auth')->group(function () {
     // Dashboard Index

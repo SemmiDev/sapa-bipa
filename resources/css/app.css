@@ -12,12 +12,28 @@
 
 @theme {
   --font-nunito: "Nunito", sans-serif;
-  --color-primary-orange: #F77500;
-  --color-primary-green: #67A516;
-  --color-accent-blue: #3B82F6;
-  --color-accent-purple: #8B5CF6;
-  --color-accent-pink: #EC4899;
-  --color-accent-yellow: #F59E0B;
+  --color-primary-orange: #f96400;
+  --color-primary-blue: #1d5e84;
+  --color-secondary-50: #fff5f0;
+  --color-secondary-100: #ffe8db;
+  --color-secondary-200: #ffcdba;
+  --color-secondary-300: #ffa98a;
+  --color-secondary-400: #ff7b51;
+  --color-secondary-500: #f96400;
+  --color-secondary-600: #ea4a00;
+  --color-secondary-700: #c23800;
+  --color-secondary-800: #9b2e07;
+  --color-secondary-900: #7c2a0b;
+  --color-primary-50: #f0f8ff;
+  --color-primary-100: #e0f0ff;
+  --color-primary-200: #b9e0ff;
+  --color-primary-300: #7cc6ff;
+  --color-primary-400: #38a8ff;
+  --color-primary-500: #0d8aff;
+  --color-primary-600: #006eff;
+  --color-primary-700: #0058ff;
+  --color-primary-800: #0049cc;
+  --color-primary-900: #1d5e84;
   --font-size-body-mobile: 16px;
   --line-height-body-mobile: 1.5;
   --font-size-body-desktop: 18px;
@@ -74,7 +90,7 @@
 
   /* Custom focus styles */
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-[#fa6400] focus:ring-offset-2;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-orange focus:ring-offset-2;
   }
 
   /* Animation for success messages */
@@ -94,7 +110,7 @@
 
   /* Header gradient background */
   .header-gradient {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #1d5e84 0%, #f96400 100%);
   }
 
   /* Sidebar active item animation */
@@ -110,7 +126,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(29, 94, 132, 0.1), transparent);
     transform: translateX(-100%);
     animation: shimmer 2s infinite;
   }
@@ -175,7 +191,7 @@
   /* Loading spinner */
   .spinner {
     border: 2px solid #f3f3f3;
-    border-top: 2px solid #10b981;
+    border-top: 2px solid #1d5e84;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -193,7 +209,7 @@
 
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, #10b981, #059669);
+    background: linear-gradient(135deg, #f96400, #1d5e84);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -208,7 +224,7 @@
 
   /* Button hover effects */
   .btn-emerald {
-    @apply bg-[#fa6400] hover:bg-[#fa6400] active:bg-[#fa6400] text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-md hover:shadow-lg;
+    @apply bg-primary-orange hover:bg-secondary-600 active:bg-secondary-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-md hover:shadow-lg;
   }
 
   /* Sidebar menu item hover */
@@ -334,7 +350,7 @@ a:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid #f77500;
+  outline: 2px solid #f96400;
   outline-offset: 2px;
 }
 
@@ -431,21 +447,21 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #f77500, #67a516);
+  background: linear-gradient(to bottom, #f96400, #1d5e84);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #e66a00, #5a8f14);
+  background: linear-gradient(to bottom, #ea4a00, #0049cc);
 }
 
 /* Selection styles */
 ::selection {
-  background-color: #f77500;
+  background-color: #f96400;
   color: white;
 }
 
 ::-moz-selection {
-  background-color: #f77500;
+  background-color: #f96400;
   color: white;
 }

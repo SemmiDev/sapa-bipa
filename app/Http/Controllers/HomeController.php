@@ -5,13 +5,19 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Game;
 use App\Models\VocabularyCategory;
+use App\Models\Visitor;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function home()
     {
-        return view("home.home");
+        // Get visitor statistics
+        $visitorStats = Visitor::getStatistics();
+        
+        return view("home.home", [
+            'visitorStats' => $visitorStats,
+        ]);
     }
 
     public function articles()
@@ -56,9 +62,7 @@ class HomeController extends Controller
 
     public function games()
     {
-        $games = Game::where('title', 'NOT LIKE', '%pre%')
-            ->orderBy('level', 'asc')
-            ->get();
+        $games = Game::orderBy('level', 'asc')->get();
 
         return view("home.games", [
             "games" => $games

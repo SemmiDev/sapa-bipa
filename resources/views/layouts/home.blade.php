@@ -23,94 +23,127 @@
             line-height: 1.5;
             font-size: 1.1rem;
         }
+
         .prose p {
             /* margin-bottom: 1.5rem; */
         }
-        .prose i, .prose em {
+
+        .prose i,
+        .prose em {
             font-style: italic;
         }
-        .prose b, .prose strong {
+
+        .prose b,
+        .prose strong {
             font-weight: 700;
         }
+
         .prose ul {
             list-style-type: disc;
             list-style-position: inside;
             /* margin-bottom: 1.5rem; */
             padding-left: 1rem;
         }
+
         .prose ol {
             list-style-type: decimal;
             list-style-position: inside;
             /* margin-bottom: 1.5rem; */
             padding-left: 1rem;
         }
+
         .prose li {
             /* margin-bottom: 0.5rem; */
         }
+
         .prose table {
             width: 100%;
             border-collapse: collapse;
             /* margin-bottom: 1.5rem; */
             background-color: #ffffff;
-            border: 1px solid #e5e7eb; /* gray-200 */
+            border: 1px solid #e5e7eb;
+            /* gray-200 */
         }
+
         .prose th,
         .prose td {
             padding: 0.75rem;
-            border: 1px solid #e5e7eb; /* gray-200 */
+            border: 1px solid #e5e7eb;
+            /* gray-200 */
             text-align: left;
         }
+
         .prose th {
-            background-color: #f3f4f6; /* gray-100 */
+            background-color: #f3f4f6;
+            /* gray-100 */
             font-weight: 600;
-            color: #1f2937; /* gray-900 */
+            color: #1f2937;
+            /* gray-900 */
         }
-        .prose td i, .prose td em {
-            color: #4b5563; /* gray-600 */
+
+        .prose td i,
+        .prose td em {
+            color: #4b5563;
+            /* gray-600 */
         }
+
         /* Quill-specific font size classes */
         .prose .ql-size-small {
-            font-size: 0.75rem; /* smaller text */
+            font-size: 0.75rem;
+            /* smaller text */
         }
+
         .prose .ql-size-large {
-            font-size: 1.25rem; /* larger text */
+            font-size: 1.25rem;
+            /* larger text */
         }
+
         .prose .ql-size-huge {
-            font-size: 1.5rem; /* even larger text */
+            font-size: 1.5rem;
+            /* even larger text */
         }
+
         /* Quill header classes */
         .prose .ql-size-h1 {
             font-size: 2rem;
             font-weight: 700;
             /* margin-bottom: 1rem; */
         }
+
         .prose .ql-size-h2 {
             font-size: 1.5rem;
             font-weight: 600;
             /* margin-bottom: 0.75rem; */
         }
+
         .prose .ql-size-h3 {
             font-size: 1.25rem;
             font-weight: 600;
             /* margin-bottom: 0.5rem; */
         }
+
         /* Quill alignment classes */
         .prose .ql-align-center {
             text-align: center;
         }
+
         .prose .ql-align-right {
             text-align: right;
         }
+
         .prose .ql-align-justify {
             text-align: justify;
         }
+
         /* Quill list indentation */
         .prose .ql-indent-1 {
             padding-left: 2rem;
         }
+
         .prose .ql-indent-2 {
             padding-left: 4rem;
         }
+
         .prose .ql-indent-3 {
             padding-left: 6rem;
         }
@@ -168,10 +201,10 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <a href="/" class="flex-shrink-0 flex items-center">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-r from-primary-orange to-primary-green rounded-full flex items-center justify-center mr-3">
-                        <img src="{{ asset('logo.png') }}" alt="SAPA BIPA Logo">
-                    </div>
+                    {{-- <div
+                        class="w-10 h-10 bg-gradient-to-r from-primary-orange to-primary-blue rounded-full flex items-center justify-center mr-3"> --}}
+                    <img src="{{ asset('logo.png') }}" alt="SAPA BIPA Logo" class="w-16 h-16">
+                    {{-- </div> --}}
                     <span class="text-xl font-bold text-gray-800">SAPA BIPA</span>
                 </a>
 
@@ -179,14 +212,14 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="/"
-                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Tentang
+                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200">Tentang
                             Kami</a>
 
                         <!-- Articles Dropdown -->
                         <div class="relative dropdown">
                             <button
-                                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200 flex items-center">
-                                Articles
+                                class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200 flex items-center">
+                                Artikel
                                 <svg class="ml-1 w-4 h-4 transform transition-transform duration-200"
                                     fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
@@ -197,22 +230,26 @@
                             <div
                                 class="dropdown-menu absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible transform translate-y-1 transition-all duration-200">
                                 <a href="/articles"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary-orange transition-colors duration-200 rounded-t-lg">Artikel</a>
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-secondary-50 hover:text-primary-orange transition-colors duration-200 rounded-t-lg">Artikel</a>
                                 <a href="/vocabularies" data-route="/kosakata"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary-orange transition-colors duration-200 rounded-b-lg">Kosakata</a>
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-secondary-50 hover:text-primary-orange transition-colors duration-200 rounded-b-lg">Kosakata</a>
                             </div>
                         </div>
 
                         <a href="/games" data-route="/games"
-                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">🕹️
+                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200">🕹️
                             Permainan</a>
+
+                        <a href="{{ route('feedback.index') }}"
+                            class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200">💬
+                            Ulasan</a>
                     </div>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
                     <button id="mobile-menu-button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-primary-orange hover:bg-orange-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-orange transition-all duration-200">
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-primary-orange hover:bg-secondary-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-orange transition-all duration-200">
                         <svg class="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
@@ -230,12 +267,12 @@
         <div id="mobile-menu" class="md:hidden hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
                 <a href="/"
-                    class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Tentang
+                    class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200">Tentang
                     Kami</a>
 
                 <div class="mobile-dropdown px-1">
                     <button
-                        class="mobile-dropdown-button w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200 flex items-center justify-between">
+                        class="mobile-dropdown-button w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200 flex items-center justify-between">
                         Artikel
                         <svg class="w-4 h-4 transform transition-transform duration-200" fill="currentColor"
                             viewBox="0 0 20 20">
@@ -246,14 +283,17 @@
                     </button>
                     <div class="mobile-dropdown-menu hidden ml-4 space-y-1">
                         <a href="/articles"
-                            class="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Artikel</a>
+                            class="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200">Artikel</a>
                         <a href="/vocabularies"
-                            class="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Kosakata</a>
+                            class="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200">Kosakata</a>
                     </div>
                 </div>
 
                 <a href="/games" data-route="/games"
-                    class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-orange-50 transition-all duration-200">Permainan</a>
+                    class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200">Permainan</a>
+
+                <a href="{{ route('feedback.index') }}"
+                    class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-orange hover:bg-secondary-50 transition-all duration-200">Ulasan</a>
             </div>
         </div>
     </nav>
@@ -261,48 +301,49 @@
     <!-- Main Content -->
     <main id="main-content" class="flex-grow transition-all duration-500">
         @if (session('success'))
-                    <div class="flex items-center p-4 mb-4 text-sm text-white border border-[#03543F] rounded-lg bg-[#03543F] animate-slide-in"
-                        role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
-                        </svg>
-                        <div>{{ session('success') }}</div>
-                        <button type="button"
-                            class="ms-auto -mx-1.5 -my-1.5 bg-[#03543F] text-[#03543F] rounded-lg focus:ring-2 focus:ring-[#03543F] p-1.5 hover:bg-[#03543F] inline-flex items-center justify-center h-8 w-8"
-                            data-dismiss-target="#alert-border-3" aria-label="Close">
-                            <span class="sr-only">Tutup</span>
-                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 14 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                            </svg>
-                        </button>
-                    </div>
-                @endif
+            <div class="flex items-center m-5 p-4 mb-4 text-sm text-white border border-primary-blue rounded-lg bg-primary-blue animate-slide-in"
+                role="alert">
+                <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                </svg>
+                <div>{{ session('success') }}</div>
+                {{-- <button type="button"
+                    class="ms-auto -mx-1.5 -my-1.5 bg-primary-blue text-white rounded-lg focus:ring-2 focus:ring-primary-blue p-1.5 hover:bg-primary-800 inline-flex items-center justify-center h-8 w-8"
+                    data-dismiss-target="#alert-border-3" aria-label="Close">
+                    <span class="sr-only">Tutup</span>
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                </button> --}}
+            </div>
+        @endif
 
-                @if (session('error'))
-                    <div class="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 animate-slide-in"
-                        role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
-                        </svg>
-                        <div>{{ session('error') }}</div>
-                        <button type="button"
-                            class="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8"
-                            data-dismiss-target="#alert-border-1" aria-label="Close">
-                            <span class="sr-only">Tutup</span>
-                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 14 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                            </svg>
-                        </button>
-                    </div>
-                @endif
+        @if (session('error'))
+            <div class="flex items-center m-5 p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 animate-slide-in"
+                role="alert">
+                <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                </svg>
+                <div>{{ session('error') }}</div>
+                <button type="button"
+                    class="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8"
+                    data-dismiss-target="#alert-border-1" aria-label="Close">
+                    <span class="sr-only">Tutup</span>
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                </button>
+            </div>
+        @endif
+
         @yield('content')
     </main>
 
@@ -313,7 +354,7 @@
                 <div>
                     <div class="flex items-center mb-4">
                         <div
-                            class="w-8 h-8 bg-gradient-to-r from-primary-orange to-primary-green rounded-full flex items-center justify-center mr-2">
+                            class="w-8 h-8 bg-gradient-to-r from-primary-orange to-primary-blue rounded-full flex items-center justify-center mr-2">
                             <img src="{{ asset('logo.png') }}" alt="SAPA BIPA Logo">
                         </div>
                         <span class="text-xl font-bold">SAPA BIPA</span>
@@ -337,6 +378,9 @@
                         </li>
                         <li><a href="/games" data-route="/games"
                                 class="text-gray-300 hover:text-primary-orange transition-colors duration-200">Permainan</a>
+                        </li>
+                        <li><a href="{{ route('feedback.index') }}"
+                                class="text-gray-300 hover:text-primary-orange transition-colors duration-200">Ulasan</a>
                         </li>
                     </ul>
                 </div>

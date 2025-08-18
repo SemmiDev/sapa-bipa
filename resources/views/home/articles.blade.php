@@ -5,7 +5,7 @@
 @section('content')
     <div class="min-h-screen py-12 bg-gray-100">
         <!-- Page Header -->
-        <section class="relative bg-gradient-to-r from-green-600 to-yellow-400 py-16 overflow-hidden">
+        <section class="relative bg-gradient-to-r from-primary-blue to-primary-orange py-16 overflow-hidden">
             <div class="absolute inset-0 bg-[url('/images/batik-pattern.png')] bg-cover bg-center opacity-10"></div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in-up">
@@ -32,13 +32,13 @@
                              alt="{{ $article->title }} thumbnail"
                              class="w-full h-full object-cover">
                     @else
-                        <div class="h-full bg-gradient-to-r from-green-600 to-yellow-400 flex items-center justify-center">
+                        <div class="h-full bg-gradient-to-r from-primary-blue to-primary-orange flex items-center justify-center">
                             <svg class="w-12 h-12 mx-auto mb-2 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                             </svg>
                         </div>
                     @endif
-                    <div class="absolute top-4 left-4 bg-green-600 text-white text-sm font-semibold px-3 py-1 rounded-full">
+                    <div class="absolute top-4 left-4 bg-primary-blue text-white text-sm font-semibold px-3 py-1 rounded-full">
                         {{ $article->articleCategory->name ?? 'Pendidikan' }}
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                     </p>
                     <div class="flex justify-between items-center">
                         <span class="text-sm text-gray-500">{{ $article->reading_time }} menit baca</span>
-                        <span class="text-green-600 font-medium hover:text-yellow-400 transition-colors duration-200">
+                        <span class="text-primary-blue font-medium hover:text-primary-orange transition-colors duration-200">
                             Baca Selengkapnya →
                         </span>
                     </div>
@@ -61,7 +61,7 @@
         </section>
 
         <!-- Next Section -->
-        <section class="py-16 bg-gradient-to-r from-green-50 to-yellow-50">
+        <section class="py-16 bg-gradient-to-r from-secondary-50 to-primary-50">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-bold text-gray-900 mb-6 animate-fade-in-up">
                     Siap Bermain?
@@ -71,7 +71,7 @@
                     telah Anda baca.
                 </p>
                 <a href="/games" aria-label="Mainkan Permainan Interaktif SAPA BIPA"
-                    class="next-button bg-gradient-to-r from-green-600 to-yellow-400 text-white px-10 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                    class="next-button bg-gradient-to-r from-primary-blue to-primary-orange text-white px-10 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                     Mainkan Sekarang →
                 </a>
             </div>

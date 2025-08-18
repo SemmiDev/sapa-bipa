@@ -65,8 +65,8 @@
         }
 
         .ProseMirror:focus {
-            border-color: #007A55;
-            box-shadow: 0 0 0 3px rgba(0, 122, 85, 0.2);
+            border-color: #1d5e84;
+            box-shadow: 0 0 0 3px rgba(29, 94, 132, 0.2);
         }
 
         .ProseMirror p.is-editor-empty:first-child::before {
@@ -102,7 +102,7 @@
         }
 
         .tiptap-toolbar button.active {
-            background: #007A55;
+            background: #1d5e84;
             color: white;
         }
 
@@ -151,7 +151,7 @@
                         <div class="flex items-center space-x-3">
                             <div class="flex items-center space-x-2">
                                 <div
-                                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md border border-[#03543F]">
+                                    class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md border border-primary-blue">
                                     <img src="/logo.png" alt="Sapa Bipa Logo"
                                         class="object-contain w-16 h-16 drop-shadow" />
                                 </div>
@@ -168,11 +168,11 @@
                         <!-- Profile Dropdown -->
                         <div class="relative">
                             <button type="button"
-                                class="flex items-center space-x-3 text-sm bg-white border border-gray-200 rounded-full px-3 py-2 hover:bg-gray-50 focus:ring-4 focus:ring-[#03543F] shadow-sm transition-colors"
+                                class="flex items-center space-x-3 text-sm bg-white border border-gray-200 rounded-full px-3 py-2 hover:bg-gray-50 focus:ring-4 focus:ring-primary-blue shadow-sm transition-colors"
                                 id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                                 data-dropdown-placement="bottom">
                                 <span class="sr-only">Buka menu pengguna</span>
-                                <div class="w-8 h-8 bg-[#03543F] rounded-full flex items-center justify-center">
+                                <div class="w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center">
                                     <span
                                         class="text-white text-sm font-medium">{{ substr(auth()->user()->name, 0, 1) }}</span>
                                 </div>
@@ -247,8 +247,8 @@
                 <ul class="space-y-2 font-medium">
                     <li>
                         <a href="{{ route('dashboard.index') }}"
-                            class="flex items-center p-3 text-gray-900 rounded-lg hover:bg-gray-100 group {{ request()->routeIs('dashboard.index') ? 'text-[#03543F] border-r-4 border-[#03543F]' : '' }}">
-                            <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 {{ request()->routeIs('dashboard.index') ? 'text-[#03543F]' : '' }}"
+                            class="flex items-center p-3 text-gray-900 rounded-lg hover:bg-gray-100 group {{ request()->routeIs('dashboard.index') ? 'text-primary-blue border-r-4 border-primary-blue' : '' }}">
+                            <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 {{ request()->routeIs('dashboard.index') ? 'text-primary-blue' : '' }}"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 viewBox="0 0 22 21">
                                 <path
@@ -268,8 +268,8 @@
                         <!-- Ringkasan (Dashboard) -->
                         <li>
                             <a href="{{ route('dashboard.index') }}"
-                                class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100 group {{ request()->routeIs('dashboard.index') ? 'text-[#03543F] border-r-4 border-[#03543F]' : '' }}">
-                                <svg class="w-4 h-4 mr-3 {{ request()->routeIs('dashboard.index') ? 'text-[#03543F]' : 'text-gray-400 group-hover:text-gray-500' }}"
+                                class="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100 group {{ request()->routeIs('dashboard.index') ? 'text-primary-blue border-r-4 border-primary-blue' : '' }}">
+                                <svg class="w-4 h-4 mr-3 {{ request()->routeIs('dashboard.index') ? 'text-primary-blue' : 'text-gray-400 group-hover:text-gray-500' }}"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
