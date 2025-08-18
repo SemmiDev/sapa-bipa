@@ -75,10 +75,30 @@
 
                 <!-- Pagination -->
                 @if($feedbacks->hasPages())
-                    <div class="flex justify-center">
-                        <div class="bg-white rounded-lg shadow-lg p-4">
-                            {{ $feedbacks->links() }}
-                        </div>
+                    <div class="flex justify-center items-center space-x-4">
+                        @if($feedbacks->previousPageUrl())
+                            <a href="{{ $feedbacks->previousPageUrl() }}" 
+                               class="inline-flex items-center bg-white hover:bg-gray-50 text-gray-700 px-4 py-2 rounded-lg shadow border border-gray-200 font-medium transition-colors duration-200">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                                Sebelumnya
+                            </a>
+                        @endif
+
+                        <span class="bg-white text-gray-600 px-4 py-2 rounded-lg shadow border border-gray-200 text-sm">
+                            Halaman {{ $feedbacks->currentPage() }} dari {{ $feedbacks->lastPage() }}
+                        </span>
+
+                        @if($feedbacks->nextPageUrl())
+                            <a href="{{ $feedbacks->nextPageUrl() }}" 
+                               class="inline-flex items-center bg-gradient-to-r from-primary-blue to-primary-orange hover:shadow-lg text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 transform hover:scale-105">
+                                Selanjutnya
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        @endif
                     </div>
                 @endif
 

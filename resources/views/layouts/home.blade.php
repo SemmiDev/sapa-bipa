@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="/build/assets/app-D4aioymF.css">
+	<script src="/build/assets/app-Bg19yiM2.js" defer></script>
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @yield('styles')

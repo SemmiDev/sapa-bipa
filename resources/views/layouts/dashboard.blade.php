@@ -26,6 +26,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 
+    <link rel="stylesheet" href="/build/assets/app-D4aioymF.css">
+	<script src="/build/assets/app-Bg19yiM2.js" defer></script>
+
     {{-- <link rel="stylesheet" href="/build/assets/app-CmtpiSwD.css">
     <script src="/build/assets/app-X2UW5owF.js" defer></script> --}}
 
