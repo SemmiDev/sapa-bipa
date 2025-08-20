@@ -33,8 +33,8 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tentang SAPA BIPA</h2>
                     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         SAPA BIPA (Sahabat Pembelajar Bahasa Indonesia untuk Penutur Asing) adalah platform pembelajaran
-                        interaktif yang menggabungkan bahasa dan budaya Indonesia melalui pendekatan Digital Game-Based
-                        Learning (DGBL). Kami menghadirkan pengalaman belajar yang menyenangkan, kontekstual, dan efektif
+                        interaktif yang menggabungkan bahasa dan budaya Indonesia melalui pendekatan <span class="italic">Digital Game-Based
+                        Learning (DGBL)</span>. Kami menghadirkan pengalaman belajar yang menyenangkan, kontekstual, dan efektif
                         untuk penutur asing, lembaga pengelola BIPA, dan pengajar.
                     </p>
                 </div>
@@ -88,7 +88,7 @@
                             inovatif, inklusif, dan menyenangkan, sekaligus memperkenalkan kekayaan budaya nusantara.
                         </p>
                         <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-                            Dengan pendekatan Digital Game-Based Learning, kami menggabungkan teknologi dan metode pedagogis
+                            Dengan pendekatan <span class="italic">Digital Game-Based Learning</span>, kami menggabungkan teknologi dan metode pedagogis
                             untuk menciptakan pembelajaran yang interaktif, kontekstual, dan efektif bagi penutur asing,
                             pengajar, dan lembaga BIPA.
                         </p>
@@ -139,14 +139,14 @@
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Perjalanan Belajar SAPA BIPA</h2>
                     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Mulai dari pre-test sederhana hingga permainan interaktif, SAPA BIPA dirancang untuk membuat
+                        Mulai dari <span class="italic">pre-test</span> sederhana hingga permainan interaktif, SAPA BIPA dirancang untuk membuat
                         pembelajaran Bahasa Indonesia dan budaya lokal menjadi pengalaman yang menyenangkan dan bermakna.
                         Materi kami diadaptasi dari BIPA Daring Kementerian Pendidikan Dasar dan Menengah.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-gradient-to-r from-primary-orange to-primary-blue text-white rounded-2xl p-8 shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-4">Pre-Test</h3>
+                        <h3 class="text-2xl font-semibold italic mb-4">Pre-Test</h3>
                         <p class="text-gray-100 leading-relaxed mb-4">
                             Mulai perjalanan Anda dengan pre-test sederhana untuk mengetahui kemampuan awal Anda dalam
                             Bahasa Indonesia.
@@ -157,7 +157,7 @@
                         </p>
                         <a href="#pretest" aria-label="Mulai Pre-Tes SAPA BIPA"
                            class="inline-block mt-6 bg-white text-primary-orange px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                            Mulai Pre-Test
+                            Mulai <span class="italic">Pre-Test</span>
                         </a>
                     </div>
                     <div class="bg-gradient-to-r from-primary-blue to-primary-orange text-white rounded-2xl p-8 shadow-lg">
@@ -189,9 +189,9 @@
         <section id="pretest" class="py-20 bg-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mulai dengan Pre-Test</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mulai dengan <span class="italic">Pre-Test</span></h2>
                     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Uji kemampuan awal Anda dengan pre-test interaktif kami untuk menyesuaikan perjalanan belajar Anda.
+                        Uji kemampuan awal Anda dengan <span class="italic">pre-test</span> interaktif kami untuk menyesuaikan perjalanan belajar Anda.
                     </p>
                 </div>
                 @php
@@ -215,7 +215,7 @@
                         <div class="p-8">
                             <h3 class="text-2xl font-semibold text-gray-900 mb-3">{{ $pretestGame->title }}</h3>
                             <div class="flex justify-between items-center mb-4">
-                                <span class="text-sm bg-gray-100 text-gray-600 px-3 py-1 rounded">{{ $pretestGame->level }}</span>
+                                <span class="text-sm bg-gray-100 text-gray-600 px-3 py-1 rounded italic">{{ $pretestGame->level }}</span>
                             </div>
                             <button class="w-full bg-gradient-to-r from-primary-orange to-primary-blue text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300">
                                 Mainkan Sekarang

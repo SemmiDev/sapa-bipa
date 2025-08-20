@@ -75,7 +75,7 @@
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">🎮 Kode Permainan</h3>
                     <code
                         class="bg-white px-3 py-2 rounded text-lg font-mono text-primary-blue">{{ $game->code ?? 'QUIZ2025' }}</code>
-                    <p class="text-xs text-gray-500 mt-2">Gunakan kode ini untuk bergabung, atau bisa langsung main dibawah
+                    <p class="text-xs text-gray-500 mt-3">Gunakan kode ini untuk bergabung, atau bisa langsung main dibawah
                         ini.</p>
                 </div>
             </div>
