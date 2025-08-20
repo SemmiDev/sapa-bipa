@@ -48,7 +48,7 @@
                     <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
                         <div class="mb-4">
                             <h3 class="text-2xl font-bold text-primary-blue">{{ $vocabulary->word }}</h3>
-                            <p class="text-lg text-gray-600">{{ $vocabulary->meaning }}</p>
+                            <p class="text-lg text-gray-600 italic">{{ $vocabulary->meaning }}</p>
                         </div>
                     </div>
                 @endforeach
