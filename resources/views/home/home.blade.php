@@ -215,7 +215,7 @@
                         <div class="p-8">
                             <h3 class="text-2xl font-semibold text-gray-900 mb-3">{{ $pretestGame->title }}</h3>
                             <div class="flex justify-between items-center mb-4">
-                                <span class="text-sm bg-gray-100 text-gray-600 px-3 py-1 rounded italic">{{ $pretestGame->level }}</span>
+                                <span class="text-sm bg-gray-100 text-gray-600 px-3 py-1 rounded">{{ $pretestGame->level }}</span>
                             </div>
                             <button class="w-full bg-gradient-to-r from-primary-orange to-primary-blue text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300">
                                 Mainkan Sekarang
