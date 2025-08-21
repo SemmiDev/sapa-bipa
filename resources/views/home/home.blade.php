@@ -139,16 +139,16 @@
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Perjalanan Belajar SAPA BIPA</h2>
                     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Mulai dari <span class="italic">pre-test</span> sederhana hingga permainan interaktif, SAPA BIPA dirancang untuk membuat
+                        Mulai dari <span class="">Tes Awal</span> sederhana hingga permainan interaktif, SAPA BIPA dirancang untuk membuat
                         pembelajaran Bahasa Indonesia dan budaya lokal menjadi pengalaman yang menyenangkan dan bermakna.
                         Materi kami diadaptasi dari BIPA Daring Kementerian Pendidikan Dasar dan Menengah.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-gradient-to-r from-primary-orange to-primary-blue text-white rounded-2xl p-8 shadow-lg">
-                        <h3 class="text-2xl font-semibold italic mb-4">Pre-Test</h3>
+                        <h3 class="text-2xl font-semibold  mb-4">Tes Awal</h3>
                         <p class="text-gray-100 leading-relaxed mb-4">
-                            Mulai perjalanan Anda dengan pre-test sederhana untuk mengetahui kemampuan awal Anda dalam
+                            Mulai perjalanan Anda dengan Tes Awal sederhana untuk mengetahui kemampuan awal Anda dalam
                             Bahasa Indonesia.
                         </p>
                         <p class="text-gray-100 leading-relaxed">
@@ -157,7 +157,7 @@
                         </p>
                         <a href="#pretest" aria-label="Mulai Pre-Tes SAPA BIPA"
                            class="inline-block mt-6 bg-white text-primary-orange px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                            Mulai <span class="italic">Pre-Test</span>
+                            Mulai <span class="">Tes Awal</span>
                         </a>
                     </div>
                     <div class="bg-gradient-to-r from-primary-blue to-primary-orange text-white rounded-2xl p-8 shadow-lg">
@@ -189,13 +189,13 @@
         <section id="pretest" class="py-20 bg-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mulai dengan <span class="italic">Pre-Test</span></h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mulai dengan <span class="">Tes Awal</span></h2>
                     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        Uji kemampuan awal Anda dengan <span class="italic">pre-test</span> interaktif kami untuk menyesuaikan perjalanan belajar Anda.
+                        Uji kemampuan awal Anda dengan <span class="">Tes Awal</span> interaktif kami untuk menyesuaikan perjalanan belajar Anda.
                     </p>
                 </div>
                 @php
-                   $pretestGame = App\Models\Game::where('level', 'LIKE', '%' . 'pre' . '%')->first();
+                   $pretestGame = App\Models\Game::where('level', 'LIKE', '%' . 'awal' . '%')->first();
                 @endphp
                 @if ($pretestGame)
                     <a href="/games/{{ $pretestGame->id }}/show"
@@ -224,7 +224,7 @@
                     </a>
                 @else
                     <div class="bg-white rounded-xl shadow-lg p-8 text-center max-w-4xl mx-auto">
-                        <p class="text-lg text-gray-600">Pre-Test belum tersedia. Silakan cek kembali nanti!</p>
+                        <p class="text-lg text-gray-600">Tes Awal belum tersedia. Silakan cek kembali nanti!</p>
                     </div>
                 @endif
             </div>
