@@ -97,7 +97,7 @@
                     </div>
                     <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Desain Permainan Berlevel</h3>
                     <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
-                        Permainan digital SAPA BIPA dirancang dalam berbagai level dan jenis tantangan yang variatif. Pendekatan ini membuat proses belajar lebih interaktif, menyenangkan, serta mendorong keterlibatan aktif penutur asing secara berkelanjutan.
+                        Dirancang dalam berbagai level dan jenis tantangan yang variatif. Pendekatan ini membuat proses belajar lebih interaktif, menyenangkan, serta mendorong keterlibatan aktif penutur asing secara berkelanjutan.
                     </p>
                 </div>
             </div>
