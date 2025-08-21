@@ -27,55 +27,82 @@
         </section>
 
         <!-- About Us Section -->
-        <section id="perkenalan" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tentang SAPA BIPA</h2>
-                    <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        SAPA BIPA (Sahabat Pembelajar Bahasa Indonesia untuk Penutur Asing) adalah platform pembelajaran
-                        interaktif yang menggabungkan bahasa dan budaya Indonesia melalui pendekatan <span class="italic">Digital Game-Based
-                        Learning (DGBL)</span>. Kami menghadirkan pengalaman belajar yang menyenangkan, kontekstual, dan efektif
-                        untuk penutur asing, lembaga pengelola BIPA, dan pengajar.
+         <section id="perkenalan" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header Section -->
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+                    Tentang SAPA BIPA
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-2">
+                    SAPA BIPA (Sahabat Pembelajar Bahasa Indonesia untuk Penutur Asing) adalah platform pembelajaran
+                    interaktif yang menggabungkan bahasa dan budaya Indonesia melalui pendekatan
+                    <span class="italic font-medium text-primary-blue">Digital Game-Based Learning (DGBL)</span>.
+                    Kami menghadirkan pengalaman belajar yang menyenangkan, kontekstual, dan efektif
+                    untuk penutur asing, lembaga pengelola BIPA, dan pengajar.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Feature 1: Pembelajaran Kontekstual -->
+                <div class="text-center group p-4 sm:p-6 rounded-xl hover:bg-gray-50 transition-all duration-300">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-primary-blue to-primary-orange rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <!-- Globe Icon -->
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Pembelajaran Kontekstual</h3>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        Setiap permainan disajikan dalam konteks budaya dan situasi nyata di Indonesia, membantu pembelajar menggunakan bahasa secara praktis dan alami.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center group">
-                        <div class="w-20 h-20 bg-gradient-to-r from-primary-blue to-primary-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Konten Multisensori</h3>
-                        <p class="text-gray-600 leading-relaxed">Materi pembelajaran menggabungkan audio, visual, dan
-                            interaksi langsung untuk pengalaman belajar yang kaya dan mendalam, diadaptasi dari BIPA Daring
-                            Kementerian Pendidikan.</p>
+                <!-- Feature 2: Pembelajaran Interaktif -->
+                <div class="text-center group p-4 sm:p-6 rounded-xl hover:bg-gray-50 transition-all duration-300">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-primary-orange to-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <!-- User Group Icon -->
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                        </svg>
                     </div>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Pembelajaran Interaktif</h3>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        Permainan digital dengan tantangan menarik untuk meningkatkan keterlibatan dan retensi pengetahuan.
+                    </p>
+                </div>
 
-                    <div class="text-center group">
-                        <div class="w-20 h-20 bg-gradient-to-r from-primary-orange to-primary-blue rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Pembelajaran Interaktif</h3>
-                        <p class="text-gray-600 leading-relaxed">Permainan digital dengan tantangan menarik untuk
-                            meningkatkan keterlibatan dan retensi pengetahuan.</p>
+                <!-- Feature 3: Platform Adaptif -->
+                <div class="text-center group p-4 sm:p-6 rounded-xl hover:bg-gray-50 transition-all duration-300">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-primary-blue to-primary-orange rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <!-- Device Mobile Icon -->
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zM8 4h4v10H8V4z" clip-rule="evenodd" />
+                        </svg>
                     </div>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Platform Adaptif</h3>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        Desain responsif yang mendukung pembelajaran di berbagai perangkat dan lingkungan belajar.
+                    </p>
+                </div>
 
-                    <div class="text-center group">
-                        <div class="w-20 h-20 bg-gradient-to-r from-primary-blue to-primary-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Platform Adaptif</h3>
-                        <p class="text-gray-600 leading-relaxed">Desain responsif yang mendukung pembelajaran di berbagai
-                            perangkat dan lingkungan belajar.</p>
+                <!-- Feature 4: Desain Permainan Berlevel -->
+                <div class="text-center group p-4 sm:p-6 rounded-xl hover:bg-gray-50 transition-all duration-300">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-primary-orange to-primary-blue rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                        <!-- Game Controller Icon -->
+                        <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 5v1H4.5a1.5 1.5 0 00-1.5 1.5v4a1.5 1.5 0 001.5 1.5H6v1a2 2 0 104 0V6a2 2 0 10-4-1zm2.5 2.5a1 1 0 100-2 1 1 0 000 2zm5 0a1 1 0 100-2 1 1 0 000 2zM12 9a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                        </svg>
                     </div>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Desain Permainan Berlevel</h3>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        Permainan digital SAPA BIPA dirancang dalam berbagai level dan jenis tantangan yang variatif. Pendekatan ini membuat proses belajar lebih interaktif, menyenangkan, serta mendorong keterlibatan aktif penutur asing secara berkelanjutan.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <!-- Mission Section -->
         <section class="py-20 bg-gradient-to-r from-secondary-50 to-primary-50">
