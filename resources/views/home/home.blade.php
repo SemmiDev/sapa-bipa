@@ -13,7 +13,7 @@
                         Selamat Datang di <span class="text-secondary-100">SAPA BIPA</span>
                     </h1>
                     <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-                        Belajar Bahasa Indonesia dan budaya lokal secara menyenangkan, interaktif, dan kontekstual melalui
+                        Belajar bahasa Indonesia dan budaya lokal secara menyenangkan, interaktif, dan kontekstual melalui
                         permainan digital inovatif.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -35,7 +35,7 @@
                     Tentang SAPA BIPA
                 </h2>
                 <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-2">
-                    SAPA BIPA (Sahabat Pembelajar Bahasa Indonesia untuk Penutur Asing) adalah platform pembelajaran
+                    SAPA BIPA (Sahabat Pemelajar Bahasa Indonesia bagi Penutur Asing) adalah platform pembelajaran
                     interaktif yang menggabungkan bahasa dan budaya Indonesia melalui pendekatan
                     <span class="italic font-medium text-primary-blue">Digital Game-Based Learning (DGBL)</span>.
                     Kami menghadirkan pengalaman belajar yang menyenangkan, kontekstual, dan efektif
@@ -111,7 +111,7 @@
                     <div>
                         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Misi Kami</h2>
                         <p class="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
-                            SAPA BIPA bertujuan menginternasionalisasikan Bahasa Indonesia melalui pengalaman belajar yang
+                            SAPA BIPA bertujuan untuk menginternasionalkan bahasa Indonesia melalui pengalaman belajar yang
                             inovatif, inklusif, dan menyenangkan, sekaligus memperkenalkan kekayaan budaya nusantara.
                         </p>
                         <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
@@ -167,7 +167,7 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Perjalanan Belajar SAPA BIPA</h2>
                     <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         Mulai dari <span class="">Tes Awal</span> sederhana hingga permainan interaktif, SAPA BIPA dirancang untuk membuat
-                        pembelajaran Bahasa Indonesia dan budaya lokal menjadi pengalaman yang menyenangkan dan bermakna.
+                        pembelajaran bahasa Indonesia dan budaya lokal menjadi pengalaman yang menyenangkan dan bermakna.
                         Materi kami diadaptasi dari BIPA Daring Kementerian Pendidikan Dasar dan Menengah.
                     </p>
                 </div>
@@ -176,7 +176,7 @@
                         <h3 class="text-2xl font-semibold  mb-4">Tes Awal</h3>
                         <p class="text-gray-100 leading-relaxed mb-4">
                             Mulai perjalanan Anda dengan Tes Awal sederhana untuk mengetahui kemampuan awal Anda dalam
-                            Bahasa Indonesia.
+                            bahasa Indonesia.
                         </p>
                         <p class="text-gray-100 leading-relaxed">
                             Tes ini membantu menyesuaikan materi pembelajaran dengan kebutuhan Anda, membuat pengalaman
@@ -190,7 +190,7 @@
                     <div class="bg-gradient-to-r from-primary-blue to-primary-orange text-white rounded-2xl p-8 shadow-lg">
                         <h3 class="text-2xl font-semibold mb-4">Level 1 - Pemula</h3>
                         <p class="text-gray-100 leading-relaxed mb-4">
-                            Untuk peserta yang baru mulai belajar Bahasa Indonesia. Materi mencakup kosa kata dasar, salam,
+                            Untuk peserta yang baru mulai belajar bahasa Indonesia. Materi mencakup kosa kata dasar, salam,
                             angka, warna, pekerjaan, dan ungkapan sehari-hari.
                         </p>
                         <p class="text-gray-100 leading-relaxed">
@@ -262,7 +262,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Jelajahi Lebih Banyak</h2>
                 <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-                    Lanjutkan perjalanan belajar Anda dengan artikel budaya dan kosa kata Bahasa Indonesia.
+                    Lanjutkan perjalanan belajar Anda dengan artikel budaya dan kosa kata bahasa Indonesia.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="/articles" aria-label="Lihat Artikel SAPA BIPA"

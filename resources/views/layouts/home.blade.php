@@ -363,7 +363,7 @@
                         <span class="text-xl font-bold">SAPA BIPA</span>
                     </div>
                     <p class="text-gray-300 text-sm leading-relaxed">
-                        Sahabat Pembelajar Bahasa Indonesia untuk Penutur Asing. Belajar bahasa dan budaya Indonesia
+                        Sahabat Pemelajar Bahasa Indonesia bagi Penutur Asing. Belajar bahasa dan budaya Indonesia
                         melalui permainan digital yang interaktif dan menyenangkan.
                     </p>
                 </div>

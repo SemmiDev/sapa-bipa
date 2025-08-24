@@ -48,7 +48,7 @@
                 <div class="text-sm mb-6 game-content">
                     <div class="">
                         {!! $game->description ??
-                            '<p>Uji pengetahuan Anda tentang Bahasa Indonesia dan budaya lokal melalui platform kuis kami yang menarik.</p>' !!}
+                            '<p>Uji pengetahuan Anda tentang bahasa Indonesia dan budaya lokal melalui platform kuis kami yang menarik.</p>' !!}
 
                     </div>
                 </div>

@@ -16,7 +16,7 @@
                     memainkan permainan digital SAPA BIPA.
                 </p>
                 <p class="text-base md:text-lg text-secondary-100 italic max-w-3xl mx-auto leading-relaxed mb-8">
-                    Catatan: Kosakata disajikan dalam Bahasa Indonesia dengan terjemahan Inggris di bawahnya untuk
+                    Catatan: Kosakata disajikan dalam bahasa Indonesia dengan terjemahan Inggris di bawahnya untuk
                     memudahkan pemahaman cepat.
                 </p>
             </div>
@@ -49,7 +49,7 @@
 
            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
             <div class="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center animate-fade-in-up">💡 Tips Belajar</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center animate-fade-in-up">💡 Trik Belajar</h2>
                 <div class="bg-white rounded-lg p-6">
                     <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
                         <li>Ucapkan kata dengan suara keras 2–3 kali untuk mengingat bunyi dan arti.</li>
